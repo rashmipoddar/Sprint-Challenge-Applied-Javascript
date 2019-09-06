@@ -51,9 +51,13 @@ function articleCreator(articleObj) {
   cardAuthor.classList.add('author');
   card.appendChild(cardAuthor);
 
+  const cardAuthorImgDiv = document.createElement('div');
+  cardAuthorImgDiv.classList.add('img-container');
+  cardAuthor.appendChild(cardAuthorImgDiv);
+
   const cardAuthorImg = document.createElement('img');
   cardAuthorImg.src = articleObj.authorPhoto;
-  cardAuthor.appendChild(cardAuthorImg);
+  cardAuthorImgDiv.appendChild(cardAuthorImg);
 
   const cardAuthorName = document.createElement('span');
   cardAuthorName.textContent = `By ${articleObj.authorName}`;

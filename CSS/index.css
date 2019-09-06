@@ -43,7 +43,6 @@ body {
   flex-direction: column;
   background-color: #f1f1f1;
   color: #333;
-  font-family: 'PT Sans', sans-serif;
 }
 .top-bar {
   width: 100%;
@@ -298,8 +297,4 @@ body {
   top: 50%;
   right: 25px;
   transform: translate(0, -50%);
-}
-.carousel img {
-  width: 100%;
-  display: none;
 }
