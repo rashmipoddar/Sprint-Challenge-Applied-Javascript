@@ -25,7 +25,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
     // console.log(articlesObj);
     for (let articlesArray in articlesObj) {
       const articles = [...articlesObj[articlesArray]];
-      console.log(articles);
+      // console.log(articles);
       articles.forEach(article => {
         articleCreator(article);
       })
